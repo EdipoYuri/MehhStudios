@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Regular.ttf");
+}
+
+.titulo{
+    color: black;
+    font-family: Quicksand;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.section{
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+#section1 {
+    background-color: #0FF;
+}
+
+#section2 {
+    background-color: #0F0;
+}
+
+#section3 {
+    background-color: #0ff;
+}
+
+#section4 {
+    background-color: #999;
+}
+
+#fp-nav ul li a span {
+    background-color: #f00;
+}
+
+/* ------ Efeito divs flutuantes ------ */
+.floatingBlocks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.floatingItems{
+    align-self: center;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.floating2 {  
+    animation-name: floating2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating2 {
+    from { transform: translate(0,  15px); }
+    50%  { transform: translate(0, 0px); }
+    to   { transform: translate(0, 15px); }    
+}
+/* ************************************ */
+
+
+/* Fazer o site em 240px */
+
+@media screen and (min-width:320px) { }
+@media screen and (min-width:480px) { }
+@media screen and (min-width:600px) { }
+@media screen and (min-width:768px) { }
+@media screen and (min-width:992px) { }

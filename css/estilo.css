@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Baloo';   
+    src: url("../fonts/BalooTammudu-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: Baloo;
+    text-align: center;
+}
+
+
+
