@@ -1,43 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face{
+body {
+    background-color: black;
+    background-image: url(../img/);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+}
+
+@font-face {
     font-family: "Quicksand";
     src: url("../fonts/Quicksand-Regular.ttf");
 }
 
-.titulo{
-    color: black;
+@keyframes blue {
+    0% {
+        background: #0101a3;
+    }
+    50% {
+        background: #000066;
+    }
+    100% {
+        background: #0101a3;
+    }
+}
+
+@-moz-keyframes blue {
+    0% {
+        background: #0101a3;
+    }
+    50% {
+        background: #000066;
+    }
+    100% {
+        background: #0101a3;
+    }
+}
+
+@-webkit-keyframes blue {
+    0% {
+        background: #0101a3;
+    }
+    50% {
+        background: #000066;
+    }
+    100% {
+        background: #0101a3;
+    }
+}
+
+/*@keyframes red {
+    0% {
+        background: red;
+    }
+    50% {
+        background: #800000;
+    }
+    100% {
+        background: red;
+    }
+}
+
+@-moz-keyframes red{
+    0% {
+        background: red;
+    }
+    50% {
+        background: #800000;
+    }
+    100% {
+        background: red;
+    }
+}
+
+@-webkit-keyframes red{
+    0% {
+        background: red;
+    }
+    50% {
+        background: #800000;
+    }
+    100% {
+        background: red;
+    }
+}*/
+
+.titulo {
     font-family: Quicksand;
     font-size: 20px;
     padding-bottom: 40px;
 }
 
-.section{
+.section {
     text-align: center;
+    animation: blue 3s;
+    -webkit-animation: blue 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
 }
 
-.logo{
+/*.red{
+    animation: red 3s;
+    -webkit-animation: red 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}*/
+
+.logo {
     width: 100px;
-}
-
-#section1 {
-    background-color: #0FF;
-}
-
-#section2 {
-    background-color: #0F0;
-}
-
-#section3 {
-    background-color: #0ff;
-}
-
-#section4 {
-    background-color: #999;
 }
 
 #fp-nav ul li a span {
@@ -45,18 +120,19 @@
 }
 
 /* ------ Efeito divs flutuantes ------ */
-.floatingBlocks{
+
+.floatingBlocks {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.floatingItems{
+.floatingItems {
     align-self: center;
 }
 
-.floating {  
+.floating {
     animation-name: floating;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -64,12 +140,18 @@
 }
 
 @keyframes floating {
-    from { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
+    from {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
 }
 
-.floating2 {  
+.floating2 {
     animation-name: floating2;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -77,17 +159,27 @@
 }
 
 @keyframes floating2 {
-    from { transform: translate(0,  15px); }
-    50%  { transform: translate(0, 0px); }
-    to   { transform: translate(0, 15px); }    
+    from {
+        transform: translate(0, 15px);
+    }
+    50% {
+        transform: translate(0, 0px);
+    }
+    to {
+        transform: translate(0, 15px);
+    }
 }
-/* ************************************ */
 
+/* ************************************ */
 
 /* Fazer o site em 240px */
 
-@media screen and (min-width:320px) { }
-@media screen and (min-width:480px) { }
-@media screen and (min-width:600px) { }
-@media screen and (min-width:768px) { }
-@media screen and (min-width:992px) { }
+@media screen and (min-width:320px) {}
+
+@media screen and (min-width:480px) {}
+
+@media screen and (min-width:600px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {}
