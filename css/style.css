@@ -54,7 +54,7 @@ body {
     }
 }
 
-/*@keyframes red {
+@keyframes red {
     0% {
         background: red;
     }
@@ -88,7 +88,7 @@ body {
     100% {
         background: red;
     }
-}*/
+}
 
 .titulo {
     font-family: Quicksand;
@@ -98,18 +98,20 @@ body {
 
 .section {
     text-align: center;
+    
+}
+.blue{
     animation: blue 3s;
     -webkit-animation: blue 3s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
 }
-
-/*.red{
+.red{
     animation: red 3s;
     -webkit-animation: red 3s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-}*/
+}
 
 .logo {
     width: 100px;
