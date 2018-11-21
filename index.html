@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehh Studios</title>
-    <link rel='stylesheet' href='css/jquery.fullPage.min.css'>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop()) {
-                $('#fullpage').addClass('red');
-            } else {
-                $('#fullpage').removeClass('blue');
-            }
-        })
-
-    </script>
+    <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section blue" id="section1">
-            <p class="titulo">Mehh Studios</p>
-            <img src="img/Logo.png" alt="Logo da Mehh Studios" class="logo">
+    <nav class="menu">
+        <ul>
+            <li><a name="inicio" href="#inicio">Inicio</a></li>
+            <li><a name="equipe" href="#equipe">Equipe</a></li>
+            <li><a name="jogos" href="#jogos">Jogos</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="main">
+        <div class="main" id="inicio" name="inicio">
+            <img id="logo" src="img/Logo.png">
         </div>
-        <div class="section red" id="section2">
-            <p class="titulo">Integrantes</p>
+
+        <div class="title-bg" style="background-image: url(img/Team.jpg)"></div>
+
+        <div id="equipe">
             <div class="floatingBlocks">
-                <div class="floating2 floatingItems"><img src="img/Placa.png"></div>
-                <div class="floating floatingItems"><img src="img/Placa.png"></div>
-                <div class="floating2 floatingItems"><img src="img/Placa.png"></div>
-                <div class="floating floatingItems"><img src="img/Placa.png"></div>
+                <div class="floating2 floatingItems"><img src="img/Blocos/Bau.png"></div>
+                <div class="floating floatingItems"><img src="img/Blocos/PC.png"></div>
+                <div class="floating2 floatingItems"><img src="img/Blocos/Placa.png"></div>
+                <div class="floating floatingItems"><img src="img/Blocos/TV.png"></div>
             </div>
         </div>
-        <div class="section" id="section3" style="background-color: aqua">
-            <p class="titulo">Jogos desenvolvidos</p>
+
+        <div class="title-bg" style="background-image: url(img/Game.jpg)"></div>
+
+        <div id="jogos">
+            <div class="jogo-descricao"><img src="img/Curling%20Penguin.png" class="game-img"></div>
+            <div class="imgs">
+                <div class="gif-1">
+                </div>
+                <div class="gif-2">
+                </div>
+                <div class="gif-3"></div>
+            </div>
         </div>
-        <div class="section" id="section4" style="background-color: chartreuse">
-            <p class="titulo">Wallpaper</p>
-        </div>
+
     </div>
 
-    <script src='js/jquery.min.js'></script>
-    <script src='js/jquery.fullPage.min.js'></script>
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
 </body>
 
 </html>
