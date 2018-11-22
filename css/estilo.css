@@ -1,29 +1,39 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
 }
 
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box; }
+
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgb(122,153,217)),color-stop(0.72, rgb(73,125,189)),color-stop(0.86, rgb(28,58,148)));
 }
 
 .menu {
-    font-family: Raleway;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 99;
+    top: 0;
     background: #53346D;
-    transition: all .3s;
+    position: fixed;
     text-align: center;
+    font-family: Raleway;
+    transition: all .3s;
 }
 
 .menu ul {
-    padding: 0;
     list-style-type: none;
     display: inline-block;
-    margin: 0;
+    margin: 0; padding: 0;
 }
 
 .menu ul li {
@@ -52,16 +62,14 @@ html {
     text-decoration: none;
 }
 
-.menu ul li a.active {
-    border-color: #fafafa;
-}
+.menu ul li a.active { border-color: #fafafa; }
 
 .main {
     padding-top: 45px;
     text-align: center;
 }
 
-.title-bg{
+.sessao-bg{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,132 +116,54 @@ html {
     flex-wrap: wrap;
 }
 
-.game-img{
-    width: 50vh;
-}
-
-.imgs {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
 .jogo-descricao {
     background: linear-gradient(to left, red, blue);
     background: url(../img/Bg-game.jpg);
     background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-    min-width: 70%;
-    padding-top: 10px;
+    width: 100vw;
+    padding-top: 15px;
     height: 50vh;
 }
 
-.gif-1 {
-    min-width: 30%;
-    min-height: 16.666vh;
-    background: url(../img/Gif-1.gif);
-    object-fit: fill;
-	background-color: #000;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+.game-img{ width: 50vh; }
 
-.gif-2{
-    background: url(../img/Gif-2.gif);
-    min-width: 30%;
-    min-height: 16.666vh;
-    object-fit: fill;
-	background-color: #000;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-}
-
-.gif-3{
-    background: url(../img/Gif-3.gif);
-    min-width: 30%;
-    min-height: 16.666vh;
-    object-fit: fill;
-	background-color: #000;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-    
-}
-
-.video{
-    max-height: 16.666vh;
-}
-
-#outros {
-    min-height: 100vh;
-    background: #2c3e50;
-    background: -webkit-linear-gradient(to left, #2c3e50, #3498db);
-    background: linear-gradient(to left, #2c3e50, #3498db);
-}
-
-.floatingBlocks {
-    width: 100%;
+#imgs-gifs{
+    width: 100vw;
+    overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.floatingItems {
-    align-self: center;
-    padding-right: 10px;
+.gifs {
+    max-width: 33.33%;
+    max-height: 15%;
+	background-color: #000;
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
 }
-
-.floating {
-    animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-    from {
-        transform: translate(0, 0px);
-    }
-    50% {
-        transform: translate(0, 15px);
-    }
-    to {
-        transform: translate(0, -0px);
-    }
-}
-
-.floating2 {
-    animation-name: floating2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating2 {
-    from {
-        transform: translate(0, 15px);
-    }
-    50% {
-        transform: translate(0, 0px);
-    }
-    to {
-        transform: translate(0, 15px);
-    }
-}
-
 
 /* Fazer o site em 240px */
 
-@media screen and (min-width:320px) {}
+@media screen and (min-width:320px) {
+    
+}
 
-@media screen and (min-width:480px) {}
+@media screen and (min-width:480px) {
 
-@media screen and (min-width:600px) {}
+}
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:600px) {
 
-@media screen and (min-width:992px) {}
+}
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:992px) {
+    
+}
