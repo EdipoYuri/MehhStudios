@@ -215,7 +215,7 @@ html {
     top: 70%; left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 5px 0px #133DB9, -5px 0px #133DB9, 0px 5px #133DB9, 0px -5px #133DB9, 0px 15px #2979FF, -5px 10px #2A6CDA, 5px 10px #2A6CDA;
@@ -264,12 +264,18 @@ html {
 }
 
 @media screen and (min-width:600px) {
-
+    .text{
+        width: 70vh;
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width:768px) {
     .jogo-descricao{
-        height: 90vh;
+        height: 100vh;
+    }
+    .download{
+        top:70%;
     }
 }
 
