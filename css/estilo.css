@@ -16,6 +16,12 @@ body{
 
 * { box-sizing: border-box; font-family: MaxImpact; }
 
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }*/
+
 ::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: rgb(0, 0, 0);
@@ -89,8 +95,8 @@ body{
     background-size: cover;
     text-align: center;
     align-content: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     top:0;left:0;right:0;bottom:0;
 }
 
@@ -131,7 +137,7 @@ body{
 
 .name {
     color: #FFF;
-    font-size: 6vw;
+    font-size: 4vw;
     padding: 0 0 0 .1em;
     text-shadow: 3px 3px #000000;
 }
@@ -151,6 +157,49 @@ body{
     /* IE6-9 fallback on horizontal gradient */
 }
 
+.yellow{
+    animation: yellow 3s;
+    -webkit-animation: yellow 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes yellow {
+    0% {
+        background: #f6e600;
+    }
+    50% {
+        background: #adab2e;
+    }
+    100% {
+        background: #f6e600;
+    }
+}
+
+@-moz-keyframes yellow {
+    0% {
+        background: #f6e600;
+    }
+    50% {
+        background: #adab2e;
+    }
+    100% {
+        background: #f6e600;
+    }
+}
+
+@-webkit-keyframes yellow {
+    0% {
+        background: #f6e600;
+    }
+    50% {
+        background: #adab2e;
+    }
+    100% {
+        background: #f6e600;
+    }
+}
+
 #logo{
     display: block;
     margin-top: 40vh;
@@ -159,15 +208,73 @@ body{
 }
 
 #equipe {
-    min-height: 98.5vh;
-    background: #00d2ff;
+    background-image: url(../img/Sky.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
     background: -webkit-linear-gradient(to left, #00d2ff, #928DAB);
-    background: linear-gradient(to left, #00d2ff, #928DAB);
+    background: linear-gradient(to left, #00d2ff, #928DAB);*/
 }
 
-.team{
-    min-width: 100%;
-    height: 10vh;
+.floatingBlocks {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.floatingItems {
+    align-self: center;
+    width: 45%;
+}
+.baus{
+    width: 100%;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-top: 20px;
+    margin-left: 5px;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+.floating2 {
+    animation-name: floating2;
+    margin-right: 5px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes floating2 {
+    from {
+        transform: translate(0, 15px);
+    }
+    50% {
+        transform: translate(0, 0px);
+    }
+    to {
+        transform: translate(0, 15px);
+    }
 }
 
 #jogos {
