@@ -250,7 +250,7 @@ body{
         transform: translate(0, 0px);
     }
     50% {
-        transform: translate(0, 15px);
+        transform: translate(0, 20px);
     }
     to {
         transform: translate(0, -0px);
@@ -268,13 +268,13 @@ body{
 
 @keyframes floating2 {
     from {
-        transform: translate(0, 15px);
+        transform: translate(0, 30px);
     }
     50% {
-        transform: translate(0, 0px);
+        transform: translate(0, 10px);
     }
     to {
-        transform: translate(0, 15px);
+        transform: translate(0, 30px);
     }
 }
 
