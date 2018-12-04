@@ -37,7 +37,6 @@ body{
     background: rgba(0, 0, 0, 0);
     position: fixed;
     text-align: center;
-    font-family: Raleway;
     transition: all .3s;
 }
 .black{
@@ -59,7 +58,6 @@ body{
     display: block;
     padding: 1vh 20px;
     color: #fdfdfd;
-    text-transform: uppercase;
     cursor: pointer;
     border-bottom: 3px solid transparent;
     transition: all.5s;
