@@ -128,7 +128,7 @@ html {
 
 .name {
     color: #FFF;
-    font-size: 3em;
+    font-size: 5vw;
     padding: 0 0 0 .1em;
     text-shadow: 3px 3px #000000;
 }
@@ -197,10 +197,10 @@ html {
     /*top: 50%; left: 50%;
     transform: translate(-50%, -50%);*/
     color: #FFF;
-    font-size: 1.75em;
+    font-size: 5vw;
     text-shadow: 3px 3px #000000;
     position: absolute;
-    width: 65vh;
+    width: 80vh;
     top: 45%; left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -266,7 +266,6 @@ html {
 @media screen and (min-width:600px) {
     .text{
         width: 70vh;
-        font-size: 2em;
     }
 }
 
