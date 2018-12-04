@@ -168,7 +168,9 @@ html {
 }
 
 #jogos {
-    min-height: 100vh;
+    min-width: 320px;
+    min-height: 480px;
+    height: 100vh;
     background: #B24592;
     background: -webkit-linear-gradient(to left, #B24592, #F15F79);
     background: linear-gradient(to left, #B24592, #F15F79);
@@ -191,7 +193,7 @@ html {
     padding-top: 15px;
 }
 
-.game-img{ width: 50vw; }
+.game-img{ width: 60vw; }
 
 .text{
     /*top: 50%; left: 50%;
@@ -200,7 +202,7 @@ html {
     font-size: 5.5vw;
     text-shadow: 3px 3px 3px #000000;
     position: absolute;
-    width: 80vh;
+    width: 90vh;
     top: 45%; left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -290,6 +292,19 @@ html {
         width: 70%;
         height: 100%;
         position: relative;
+    }
+
+    .text{
+        width: 95%;
+        top: 50%;
+        font-size: 5vw;
+    }
+
+    .download{
+        top: 90%;
+        padding: 15px;
+        padding-left: 30px; padding-right: 30px;
+        font-size: 40px;
     }
 
     .imgs-gifs{
