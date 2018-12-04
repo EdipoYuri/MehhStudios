@@ -221,7 +221,7 @@ body{
 
 .floatingBlocks {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -240,7 +240,6 @@ body{
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    padding-top: 20px;
     margin-left: 5px;
 }
 
