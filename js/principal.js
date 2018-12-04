@@ -1,3 +1,5 @@
+var prevScrollpos = window.pageYOffset;
+
 //MENU SCROLL
 $(".menu a").click(function () {
     var name = $(this).attr('name');
@@ -38,7 +40,21 @@ function scrollSpy() {
     $(".menu").css("display", "inline-block");
 };
 
+function scrollFunction() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+
+        document.getElementById("navbar").style.top = "0";
+        $('nav').addClass('black');
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+        $('nav').removeClass('black');
+    }
+    prevScrollpos = currentScrollPos;
+}
+
 $(window).scroll(function () {
+    scrollFunction();
     scrollSpy();
 });
 $(document).ready(function () {
