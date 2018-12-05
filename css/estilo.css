@@ -385,9 +385,8 @@ body{
 }
 
 @media screen and (min-width:600px) {
-    
-    .equipe{
-        height: 100vh;
+    #equipe{
+        height: 80vh;
     }
 
     .text{
