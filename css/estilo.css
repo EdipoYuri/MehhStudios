@@ -2,40 +2,30 @@
     font-family: "MaxImpact";
     src: url("../fonts/Maximum\ Impact.ttf");
 }
-
-body,
-html {
-    margin: 0; padding: 0;
+body, html {
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     height: 100vh;
 }
-
 body{
     overflow-x: hidden;
 }
-
-* { box-sizing: border-box; font-family: MaxImpact; }
-
-/** {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-  }*/
-
+* {
+    box-sizing: border-box;
+    font-family: MaxImpact;
+}
 ::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgb(0, 0, 0);
 }
-
 ::-webkit-scrollbar{
-	width: 7px;
-	background-color: #F5F5F5;
+    width: 7px;
+    background-color: #F5F5F5;
 }
-
 ::-webkit-scrollbar-thumb{
-	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgb(122,153,217)),color-stop(0.72, rgb(73,125,189)),color-stop(0.86, rgb(28,58,148)));
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgb(122,153,217)),color-stop(0.72, rgb(73,125,189)),color-stop(0.86, rgb(28,58,148)));
 }
-
 .menu {
     width: 100%;
     z-index: 99;
@@ -48,18 +38,16 @@ body{
 .black{
     background: rgba(0, 0, 0, 0.5);
 }
-
 .menu ul {
     list-style-type: none;
     display: inline-block;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 .menu ul li {
     display: inline-block;
     font-size: 1.1em;
 }
-
 .menu ul li a {
     display: block;
     padding: 1vh 20px;
@@ -68,26 +56,21 @@ body{
     border-bottom: 3px solid transparent;
     transition: all.5s;
     text-decoration: none;
-    
     font-weight: bold;
 }
-
-.menu ul li a:hover,
-.menu ul li a.active {
+.menu ul li a:hover, .menu ul li a.active {
     text-decoration: none;
 }
-
 .menu ul li a:focus {
     outline: 0 !important;
     text-decoration: none;
 }
-
-.menu ul li a.active { border-color: #fafafa; }
-
+.menu ul li a.active {
+    border-color: #fafafa;
+}
 .main {
     text-align: center;
 }
-
 .sessao-bg{
     background-attachment: fixed;
     background-position: center;
@@ -97,16 +80,17 @@ body{
     align-content: center;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    top:0;left:0;right:0;bottom:0;
+    top:0;
+   left:0;
+   right:0;
+   bottom:0;
 }
-
-.name {
+.titulo {
     color: #FFF;
     font-size: 4vw;
     padding: 0 0 0 .1em;
     text-shadow: 3px 3px #000000;
 }
-
 .titulo-sessao{
     position: relative;
     width: 90vw;
@@ -116,11 +100,10 @@ body{
     box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(255,255,255,0.4), 0 1em 0.625em -.4em rgba(0,0,0,0.8);
     transition: linear .2s;
     background: #2024b9;
-  }
-  
-  .titulo-sessao:before {
-     content: " ";
-     position: absolute;
+}
+.titulo-sessao:before {
+    content: " ";
+    position: absolute;
     top: -.25em;
     left: -.25em;
     width: .625em;
@@ -128,11 +111,10 @@ body{
     background: #1b1b1b;
     border-bottom: solid .25em #000;
     border-right: solid .25em #000;
-  }
-  
-  .titulo-sessao:after {
-     content: " ";
-     position: absolute;
+}
+.titulo-sessao:after {
+    content: " ";
+    position: absolute;
     bottom: -.25em;
     right: -.25em;
     width: .625em;
@@ -140,106 +122,85 @@ body{
     background: #1b1b1b;
     border-top: solid .25em #000;
     border-left: solid .25em #000;
-  }
-
-
-
+}
 #inicio {
     height: 100vh;
-    
     background: rgb(96, 171, 248);
-    /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, rgba(96, 171, 248, 1) 2%, rgba(96, 171, 248, 1) 3%, rgba(17, 33, 255, 1) 100%);
-    /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 171, 248, 1) 2%, rgba(96, 171, 248, 1) 3%, rgba(17, 33, 255, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, rgba(96, 171, 248, 1) 2%, rgba(96, 171, 248, 1) 3%, rgba(17, 33, 255, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#60abf8', endColorstr='#1121ff', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
 }
-
-.yellow{
-    animation: yellow 3s;
-    -webkit-animation: yellow 3s;
+.green{
+    animation: green 3s;
+    -webkit-animation: green 3s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
 }
-
-@keyframes yellow {
+@keyframes green {
     0% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
     50% {
-        background: #adab2e;
-    }
+        background: #24d341;
+   }
     100% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
 }
-
-@-moz-keyframes yellow {
+@-moz-keyframes green {
     0% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
     50% {
-        background: #adab2e;
-    }
+        background: #24d341;
+   }
     100% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
 }
-
-@-webkit-keyframes yellow {
+@-webkit-keyframes green {
     0% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
     50% {
-        background: #adab2e;
-    }
+        background: #24d341;
+   }
     100% {
-        background: #f6e600;
-    }
+        background: #03581d;
+   }
 }
-
 #logo{
     display: block;
     margin-top: 40vh;
     margin-left: auto;
     margin-right: auto;
 }
-
-#equipe {
+#team {
     background-image: url(../img/Sky2.png);
     width: 100%;
     height: 110vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*
-    background: -webkit-linear-gradient(to left, #00d2ff, #928DAB);
-    background: linear-gradient(to left, #00d2ff, #928DAB);*/
 }
-
 .floatingBlocks {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .floatingItems {
     align-self: center;
     width: 40%;
-    
 }
 .baus{
     width: 90%;
 }
-
 .floating {
     animation-name: floating;
     animation-duration: 5s;
@@ -249,19 +210,17 @@ body{
     margin-right: 5px;
     position: relative;
 }
-
 @keyframes floating {
     from {
         transform: translate(0, 0px);
-    }
+   }
     50% {
         transform: translate(0, 30px);
-    }
+   }
     to {
         transform: translate(0, -0px);
-    }
+   }
 }
-
 .floating2 {
     animation-name: floating2;
     margin-right: 5px;
@@ -271,19 +230,17 @@ body{
     animation-timing-function: ease-in-out;
     position: relative;
 }
-
 @keyframes floating2 {
     from {
         transform: translate(0, 30px);
-    }
+   }
     50% {
         transform: translate(0, 10px);
-    }
+   }
     to {
         transform: translate(0, 30px);
-    }
+   }
 }
-
 .social{
     position: absolute;
     top: 82%;
@@ -299,12 +256,10 @@ body{
     border: none;
     cursor: pointer;
 }
-
 .social-img{
     position: relative;
 }
-
-#jogos {
+#projects {
     min-width: 320px;
     min-height: 480px;
     height: 100vh;
@@ -317,33 +272,78 @@ body{
     bottom: 0;
     text-align: center;
 }
-
-.jogo-descricao {
+.facebook{
+    background: rgba(169,3,41,1);
+    background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+    background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.facebook-imgs{
+    width: 80%;
+    height: auto;
+    border: 7px solid #fcfcfc;
+    border-radius: 2px;
+}
+.img-shadow{
+    -webkit-box-shadow: 0 28px 16px -26px black;
+    -moz-box-shadow: 0 28px 16px -26px black;
+    box-shadow: 0 28px 16px -26px black;
+}
+.img-shadow:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -webkit-box-shadow: 0 58px 36px -56px black;
+    -moz-box-shadow: 0 58px 36px -56px black;
+    box-shadow: 0 58px 36px -56px black;
+}
+.img-shadow{
+    transition:all .6s ease-in-out;
+    -webkit-transition:all .6s ease-in-out;
+    -moz-transition:all .6s ease-in-out;
+    -ms-transition:all .6s ease-in-out;
+    -o-transition:all .6s ease-in-out;
+}
+.img-shadow:hover{
+    transition:all .6s ease-in-out;
+    -webkit-transition:all .6s ease-in-out;
+    -moz-transition:all .6s ease-in-out;
+    -ms-transition:all .6s ease-in-out;
+    -o-transition:all .6s ease-in-out;
+}
+.gameDescription {
     background: linear-gradient(to left, red, blue);
     background: url(../img/Bg-game.jpg);
     background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
     position: relative;
     padding-top: 15px;
 }
-
-.game-img{ width: 60vw; }
-
+.game-img{
+    width: 60vw;
+}
 .text{
-    /*top: 50%; left: 50%;
-    transform: translate(-50%, -50%);*/
     color: #FFF;
     font-size: 4.5vw;
     text-shadow: 3px 3px 3px #000000;
     position: absolute;
     width: 90vh;
-    top: 45%; left: 50%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .download {
     align-content: center;
     background: none;
@@ -351,7 +351,8 @@ body{
     outline: none;
     display: block;
     position: absolute;
-    top: 70%; left: 50%;
+    top: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     padding: 10px;
@@ -362,7 +363,6 @@ body{
     color: #eee;
     transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
-  
 .download:active {
     box-shadow: 5px 5px #2353E0, -5px 5px #2353E0, 0px 10px #2353E0, 0px 0px #133DB9, 0px 15px #2979FF, -5px 10px #2A6CDA, 5px 10px #2A6CDA;
     background: #2353E0;
@@ -370,7 +370,6 @@ body{
     padding-bottom: 5px;
     transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
-
 .imgs-gifs{
     max-width: 100%;
     height: auto;
@@ -381,106 +380,92 @@ body{
     bottom:0;
     left:0;
 }
-
 .gifs {
     width: 33.33%;
     height: 100%;
-	background-color: #000;
-	background-position: center;
-	background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     object-fit: fill;
 }
-
-/* Fazer o site em 240px */
-
 @media screen and (min-width:320px) {
-    
 }
-
 @media screen and (min-width:480px) {
     .text{
         font-size: 5vw;
-    }
-
+   }
 }
-
 @media screen and (min-width:600px) and (min-height:1000px) {
-    #equipe{
+    #team{
         height: 80vh;
-    }
-
+   }
     .text{
         width: 70vh;
-    }
+   }
     .download{
         top: 65%;
-    }
+   }
 }
-
 @media screen and (min-width:700px){
     .floatingItems{
         width: 24%;
-    }
-
+   }
     .floating, .floating2{
         margin-left: 2px;
         margin-right: 2px;
-    }
+   }
 }
-
 @media screen and (min-width:768px) {
-    
-    
     .text{
         width: 90vh;
-    }
-
+   }
     .jogo-descricao{
         height: 100vh;
-    }
+   }
     .download{
         top:65%;
+   }
+   .social{
+        width: 6vw;
+        height: 6vw;
     }
 }
-
 @media screen and (min-width:992px) {
     .jogo-descricao{
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .game-img{ width: 35vw; }
-
+   }
+    .game-img{
+        width: 35vw;
+   }
     .game-infos{
         width: 70%;
         height: 100%;
         position: relative;
-    }
-
+   }
     .text{
         width: 95%;
         top: 50%;
         font-size: 4vw;
-    }
-
+   }
     .download{
         top: 90%;
         padding: 15px;
-        padding-left: 30px; padding-right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: 40px;
-    }
-
+   }
     .imgs-gifs{
         width: 30%;
         height: 100%;
         flex-direction: column;
         position: absolute;
         left: 70%;
-    }
-
+   }
     .gifs{
         width: 100%;
         max-height: 33.33%;
-    }
+   }
+   
 }
