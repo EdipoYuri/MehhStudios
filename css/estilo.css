@@ -421,7 +421,7 @@ body{
     .text{
         width: 90vh;
    }
-    .jogo-descricao{
+    .gameDescription{
         height: 100vh;
    }
     .download{
@@ -433,7 +433,7 @@ body{
     }
 }
 @media screen and (min-width:992px) {
-    .jogo-descricao{
+    .gameDescription{
         display: flex;
         flex-wrap: wrap;
    }
@@ -469,6 +469,8 @@ body{
         max-height: 33.33%;
    }
    @media screen and (min-width: 1400px){
-       font-size: 3vw;
+       .text{
+           font-size: 3vw;
+       }
    }
 }
