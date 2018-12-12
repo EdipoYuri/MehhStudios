@@ -468,5 +468,7 @@ body{
         width: 100%;
         max-height: 33.33%;
    }
-   
+   @media screen and (min-width: 1400px){
+       font-size: 3vw;
+   }
 }
