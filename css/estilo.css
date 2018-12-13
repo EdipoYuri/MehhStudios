@@ -340,6 +340,7 @@ body{
     padding-top: 15px;
 }
 .dog{
+    padding-top: 10px;
     background: linear-gradient(to left, red, blue);
     background: url(../img/Bg-nevasca.jpg);
     background-position: center;
@@ -362,7 +363,7 @@ body{
     text-shadow: 3px 3px 3px #000000;
     position: absolute;
     width: 90vh;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
