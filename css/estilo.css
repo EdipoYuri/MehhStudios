@@ -2,6 +2,11 @@
     font-family: "MaxImpact";
     src: url("../fonts/Maximum\ Impact.ttf");
 }
+
+@font-face{
+    font-family: "Nevasca";
+    src: url("../fonts/upheavtt.ttf");
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -142,7 +147,7 @@ body{
         background: #03581d;
    }
     50% {
-        background: #24d341;
+        background: #20b339;
    }
     100% {
         background: #03581d;
@@ -153,7 +158,7 @@ body{
         background: #03581d;
    }
     50% {
-        background: #24d341;
+        background: #20b339;
    }
     100% {
         background: #03581d;
@@ -164,7 +169,7 @@ body{
         background: #03581d;
    }
     50% {
-        background: #24d341;
+        background: #20b339;
    }
     100% {
         background: #03581d;
@@ -324,6 +329,23 @@ body{
     background: linear-gradient(to left, red, blue);
     background: url(../img/Bg-game.jpg);
     background-position: center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    padding-top: 15px;
+}
+.dog{
+    background: linear-gradient(to left, red, blue);
+    background: url(../img/Bg-nevasca.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -340,7 +362,7 @@ body{
     text-shadow: 3px 3px 3px #000000;
     position: absolute;
     width: 90vh;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -421,7 +443,7 @@ body{
     .text{
         width: 90vh;
    }
-    .gameDescription{
+    .gameDescription, .dog{
         height: 100vh;
    }
     .download{
@@ -433,9 +455,10 @@ body{
     }
 }
 @media screen and (min-width:992px) {
-    .gameDescription{
+    .gameDescription, .dog{
         display: flex;
         flex-wrap: wrap;
+        background-position: left;
    }
     .game-img{
         width: 35vw;
@@ -444,6 +467,10 @@ body{
         width: 70%;
         height: 100%;
         position: relative;
+   }
+
+   .dog-infos{
+       left:30%;
    }
     .text{
         width: 95%;
@@ -463,6 +490,9 @@ body{
         flex-direction: column;
         position: absolute;
         left: 70%;
+   }
+   .dog-gifs{
+       left: 0;
    }
     .gifs{
         width: 100%;
